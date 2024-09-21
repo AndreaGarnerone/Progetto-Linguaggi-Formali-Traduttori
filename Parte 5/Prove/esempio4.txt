@@ -1,0 +1,10 @@
+/* comment **/
+assign 20 to x,y;
+while (> x 0)
+	conditional [
+		option (< x 5) do {assign - x 1 to x; print[x]}
+		option (< x 10) do {assign - x 2 to x; print[x]}
+	]
+	else {assign - x 2 to x; print[x]}
+	end;
+print[y,x,+(1,2,3)]
